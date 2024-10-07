@@ -112,11 +112,8 @@ final class DayCell: JTACDayCell {
         self.rangeViewLeftAnchorToSuperviewConstraint = self.backgroundRangeView.leftAnchor.constraint(equalTo: self.contentView.leftAnchor)
         self.rangeViewLeftAnchorToCenterConstraint = self.backgroundRangeView.leftAnchor.constraint(equalTo: self.contentView.centerXAnchor)
 
-        // Add small offset to prevent spacing between cells
-        self.rangeViewRightAnchorToSuperviewConstraint = self.backgroundRangeView.rightAnchor.constraint(
-            equalTo: self.contentView.rightAnchor,
-            constant: 1
-        )
+        self.rangeViewRightAnchorToSuperviewConstraint = self.backgroundRangeView.rightAnchor
+            .constraint(equalTo:self.contentView.rightAnchor)
         self.rangeViewRightAnchorToCenterConstraint = self.backgroundRangeView.rightAnchor
             .constraint(equalTo: self.contentView.centerXAnchor)
 
